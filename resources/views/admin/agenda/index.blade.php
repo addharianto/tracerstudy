@@ -8,6 +8,12 @@
 @endpush
 @section('content')
 <x-alert></x-alert>
+@if (auth()->user()->level=='alumni')
+<div class="row">
+    <h6>Agenda</h6>
+
+</div>
+@else
 <div class="row">
     <div class="col">
         <div class="card">
@@ -54,6 +60,7 @@
         </div>
     </div>
 </div>
+@endif
 @stop
 @push('js')
 <!-- DataTables -->

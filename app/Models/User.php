@@ -7,9 +7,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-use App\Models\Artikel;
-use App\Models\Pengumuman;
-
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
@@ -21,8 +18,11 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'level',
         'email',
+        'email_verified_at',
         'password',
+        'picture',
     ];
 
     /**
@@ -44,13 +44,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function artikel()
-    {
-        return $this->hasMany(Artikel::class);
-    }
 
-    public function pengumuman()
-    {
-        return $this->hasMany(Pengumuman::class);
+    public function getPictureAttribute($value){
+        if($value){
+            return asset('users/images/'.$value);
+        }else{
+            return asset('users/images/no-image.png');
+        }
     }
 }

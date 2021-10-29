@@ -10,7 +10,6 @@
     <div class="small-box bg-info">
       <div class="inner">
         <h3>@count('users')</h3>
-
         <p>Admin</p>
       </div>
       <div class="icon">

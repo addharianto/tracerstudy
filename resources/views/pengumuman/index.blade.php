@@ -16,7 +16,7 @@
 
         <div class="row">
             @foreach($pengumuman as $pn)
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-3 col-lg-3">
                 <div class="single-upcoming-events mb-50 wow fadeInUp" data-wow-delay="250ms">
                     <!-- Events Thumb -->
                     <div class="events-thumb">

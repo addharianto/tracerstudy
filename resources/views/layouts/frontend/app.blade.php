@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Laraschool | {{ $title ?? '' }}</title>
+    <title>Tracer Study | {{ $title ?? '' }}</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('templates/frontend/clever') }}/img/core-img/favicon.ico">
@@ -29,18 +29,19 @@
     <header class="header-area">
 
         <!-- Top Header Area -->
-        <div class="top-header-area d-flex justify-content-between align-items-center">
+        <!-- <div class="top-header-area d-flex justify-content-between align-items-center"> -->
             <!-- Contact Info -->
-            <div class="contact-info">
+            <!-- <div class="contact-info">                
+                <a href="ftuhamzanwadi.ac.id"><span>PRODI:</span> S1 Teknik Informatika Fakultas Teknik Universitas Hamzanwadi</a>
                 <a href="#"><span>Phone:</span> +1 123 321 456 654</a>
-                <a href="#"><span>Email:</span> laraschool@example.com</a>
-            </div>
+                <a href="#"><span>Email:</span> ft@hamzanwadi.ac.id</a>
+            </div> -->
             <!-- Follow Us -->
-            <div class="follow-us">
+            <!-- <div class="follow-us">
                 <span>Follow us</span>
                 <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </div>
-        </div>
+        </div> -->
 
         <!-- Navbar Area -->
         @include('layouts.frontend.navbar')

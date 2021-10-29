@@ -38,6 +38,7 @@
                             <option value="{{ $kategori->id }}">{{ $kategori->nama_kategori }}</option>
                         @endforeach
                         </select>
+                        
                     </div>
                 </div>
             </div>

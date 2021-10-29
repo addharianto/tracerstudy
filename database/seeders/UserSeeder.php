@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
-
-use DB;
 
 class UserSeeder extends Seeder
 {
@@ -15,22 +15,20 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-    	DB::table('users')->insert([
-            [
-                'name' => 'Rahmat Hidayatullah',
-                'email' => 'rahmat@example.com',
-                'password' => bcrypt('password'),
-            ],
-            [
-                'name' => 'Sakuranomiya',
-                'email' => 'sakuranomiya@example.com',
-                'password' => bcrypt('password'),
-            ],
-            [
-                'name' => 'Chika Fujiwara',
-                'email' => 'chika@example.com',
-                'password' => bcrypt('password'),
-            ],
+        User::truncate();
+        User::create([
+            'name' => 'Admin Aplikasi',
+            'level' => 'admin',
+            'email' => 'admin@admin.com',
+            'password' => bcrypt('admin'),
+            'remember_token' => Str::random(60),
+        ]);
+        User::create([
+            'name' => 'Alumni',
+            'level' => 'alumni',
+            'email' => 'alumni@admin.com',
+            'password' => bcrypt('alumni'),
+            'remember_token' => Str::random(60),
         ]);
     }
 }

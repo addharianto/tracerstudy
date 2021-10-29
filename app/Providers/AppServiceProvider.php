@@ -3,11 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-
-use Illuminate\Pagination\Paginator;
-use Blade;
-use URL;
-
+use Illuminate\Support\Facades\Schema;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -27,24 +23,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        /*
-            Make Your Url Force Https 
-        */
-        // URL::forceScheme('https');
-        //
-
-        /*
-            Bootstrap Pagination Style
-        */
-        Paginator::useBootstrap();
-        //
-
-        /***
-            Blade Directive , example using : @example or @example('expression') 
-        */
-        Blade::directive('count',function($expression){
-            return "<?php echo DB::table($expression)->count() ?>";
-        });   
-        //
+        Schema::defaultStringLength(191);
     }
 }

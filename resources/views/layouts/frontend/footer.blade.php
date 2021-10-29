@@ -6,11 +6,11 @@
                 <div class="col-12">
                     <!-- Footer Logo -->
                     <div class="footer-logo">
-                        <a href="/"><h3 class="text-light">LARASCHOOL</h3></a>
+                        <a href="/"><h3 class="text-light">TRACER STUDY</h3></a>
                     </div>
                     <!-- Copywrite -->
                     <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright Rahmat Hidayatullah &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright Prodi S1 Teknik Informatika Fakultas Teknik Universitas Hamzanwadi &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                 </div>
             </div>
@@ -22,7 +22,7 @@ Copyright Rahmat Hidayatullah &copy;<script>document.write(new Date().getFullYea
         <!-- Contact Info -->
         <div class="contact-info">
             <a href="#"><span>Phone:</span> +1 123 321 456 654</a>
-            <a href="#"><span>Email:</span> laraschool@example.com</a>
+            <a href="#"><span>Email:</span> ftu@hamzanwadi.ac.id</a>
         </div>
         <!-- Follow Us -->
         <div class="follow-us">

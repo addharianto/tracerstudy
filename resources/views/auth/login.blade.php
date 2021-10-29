@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Laraschool | Login</title>
+  <title>Tracer Study | Login</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -15,12 +15,14 @@
 <body class="hold-transition login-page">
 <div class="login-box mb-5">
   <!-- /.login-logo -->
-  <div class="card card-outline card-primary">
+  <div class="card card-outline card-success">
     <div class="card-header text-center">
-      <a href="" class="h4"><b>LARASCHOOL</a>
+      <a href="" class="h1"><b>TRACER STUDY</a>
+      <h5><b>PRODI TEKNIK INFORMATIKA</h5>
     </div>
+    
     <div class="card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Silahkan masuk untuk memulai</p>
 
       <form action="{{ route('login') }}" method="post">
         @csrf
@@ -53,17 +55,16 @@
         <div class="row">
           <!-- /.col -->
           <div class="col">
-            <button type="submit" class="btn btn-primary btn-block">Login</button>
+            <button type="submit" class="btn btn-success btn-block">Masuk</button>
           </div>
           <!-- /.col -->
+          <div class="col">
+          <a href="/" class="btn btn-danger btn-block">Kembali</a>
+          </div>
         </div>
       </form>
 
-      <p class="mt-2">
-        <a href="">I forgot my password</a>
-
-        <a href="/" class="float-right">Home</a>
-      </p>
+      
     </div>
     <!-- /.card-body -->
   </div>

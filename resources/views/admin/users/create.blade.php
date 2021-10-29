@@ -21,9 +21,14 @@
 						<input required="" class="form-control" type="" name="email" id="email" placeholder="">
 					</div>
 					<div class="form-group">
+						<label for="level">Level</label>
+						<input required="karyawan" class="hide" type="" name="email" id="email" placeholder="">
+					</div>
+					<div class="form-group">
 						<label for="password">Password</label>
 						<input required="" class="form-control" type="password" name="password" id="password" placeholder="">
 					</div>
+                </div>
 					<div class="form-group">
 						<button type="submit" class="btn btn-primary btn-sm">SIMPAN</button>
 					</div>

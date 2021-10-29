@@ -14,7 +14,6 @@
         </div>
 
         <div class="row">
-            
             @foreach($artikel as $art)
                 <div class="col-md-6 mb-3">
                     <div class="card">
