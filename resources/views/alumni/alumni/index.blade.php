@@ -15,6 +15,11 @@
         </div>
         <div class="card-body">
           <div class="row">
+          <div class="col-3">            
+              <div class="row">
+                <a href="{{ route('alumni.alumni.create') }}" class="btn btn-success btn-sm">Isi Data Tracer Study</a>
+              </div>
+            </div>
             <div class="col-6">
             @foreach($alumni as $alu)
               <div class="row">
@@ -98,15 +103,7 @@
             </div>
             @else @endif
             @endforeach
-            <div class="col-3">
-            @foreach($alumni as $alu)
-            @if(auth()->user()->id != $alu->user_id)
-              <div class="row">
-                <a href="{{ route('alumni.alumni.create') }}" class="btn btn-success btn-sm">Isi Data Tracer Study</a>
-              </div>
-            @endif
-            @endforeach
-            </div>
+            
            
           </div>
         </div>

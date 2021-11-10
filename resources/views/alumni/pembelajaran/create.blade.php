@@ -355,11 +355,11 @@
             
             
             </div>
-            @foreach($pembelajaran as $usr)
+            
             <div class="container">  
                 <div class="row">
                     <div class="col-1">
-                    <a  href="{{ route('alumni.wajib.edit',$usr->user_id) }}class="btn btn-danger pull-right">KEMBALI</a>
+                    
                      </div>
                     <div class="col-10">
                         
@@ -370,7 +370,6 @@
                 </div>
                 
             </div>
-            @endforeach
             </form>
     </div>
 </div>
